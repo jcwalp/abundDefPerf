@@ -31,6 +31,7 @@ public class Exercise2 {
         System.out.println("Deficient number: " + count_Deficient_no);
         System.out.println("Perfect number: " + count_Perfect_no);
         System.out.println("Abundant number: " + count_Abundant_no);
+        keyBoard.close();
     }
      public static Long proper_Divs_Sum(long num) {
         return rangeClosed(1, (num + 1) / 2).filter(i -> num % i == 0 && num != i).sum();
